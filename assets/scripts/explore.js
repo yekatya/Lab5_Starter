@@ -15,7 +15,7 @@ function init() {
   var pressToTalkBtn = document.querySelector("button");
   pressToTalkBtn.addEventListener("click", speakFunc);
   var img = document.querySelector("img");
-  img.src = "/assets/images/smiling.png";
+  img.src = "assets/images/smiling.png";
   img.alt = "Smiling Face";
 }
 
@@ -50,11 +50,11 @@ function speakFunc() {
   speechSynthesis.speak(utter);
   var synth = window.speechSynthesis;
   if (synth.speaking) {
-    smileyImage.src = "/assets/images/smiling-open.png";
+    smileyImage.src = "assets/images/smiling-open.png";
     smileyImage.alt = "Smiling Open Face";
   }
   setTimeout(function () {
-    smileyImage.src = "/assets/images/smiling.png";
+    smileyImage.src = "assets/images/smiling.png";
     smileyImage.alt = "Smiling Face";
   }, 3000);
 }
